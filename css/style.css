@@ -13,9 +13,10 @@
 }
 
 
-body {
+body{
     background: linear-gradient(90deg, #2272FF 0%, #7661FC 100%);
 }
+
 
 header,
 label,
