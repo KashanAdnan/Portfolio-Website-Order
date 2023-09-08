@@ -12,8 +12,8 @@
 
 <body>
     <div style="clip-path: polygon(0% 0%, 100% 0, 100% 97%, 0% 100%);background: linear-gradient(90deg, #2272FF 0%, #7661FC 100%);"
-        class="w-full h-screen">
-        <header class="text-gray-600 sm:px-0  px-48 body-font border-b border-white border-solid">
+        class="w-full max-h-full min-h-screen sm:h-full">
+        <header class="text-gray-600 sm:px-0 lg:px-48 body-font border-b border-white border-solid">
             <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                     <img src="assets/logo.png" class="w-30 h-14" alt="">
@@ -27,8 +27,8 @@
                     class="inline-flex items-center border-0 py-2 px-6 focus:outline-none rounded-3xl text-white text-full mt-4 md:mt-0">Signup</button>
             </div>
         </header>
-        <section class="text-gray-600 body-font overflow-hidden">
-            <div class="container px-5 py-8 mx-auto">
+        <section class="text-gray-600 body-font  overflow-hidden">
+            <div class="px-5 py-8 mx-auto sm:h-full">
                 <div class="lg:w-4/5 mx-auto flex flex-wrap justify-between items-center">
                     <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
                         <h1 class="text-white text-4xl title-font mb-4 font-black">Cameron Weijmer
@@ -50,46 +50,48 @@
         </section>
     </div>
     <section
-        class="overflow-x-hidden flex flex sm:flex-row justify-between items-center w-full h-100 py-10 bg-blue-100 relative">
-        <div class="ml-32  w-1/2 text-center items-center flex flex-col">
+        class="overflow-x-hidden lg:flex-row max-[640px]:flex-col lg:flex sm:flex-col lg:justify-between sm:justify-between max-[640px]:justify-center items-center w-full h-100 py-10 bg-blue-100 relative">
+        <div class="ml-32 max-[640px]:ml-24 sm:ml-40 w-1/2 text-center items-center flex flex-col">
             <h1 class="uppercase font-black text-2xl mb-3">about us</h1>
-            <p class="font-light leading-8 mb-4" style="width: 500px;">With a deep understanding of the digital world
+            <p class="font-light leading-8 mb-4 max-[640px]:px-24 max-[640px]:w-full" style="width: 500px;">With a deep
+                understanding of the digital world
                 and an
                 unquenchable thirst for knowledge, I am passionate about getting the best out of every project and
                 creating innovative solutions that push the boundaries of what is possible.</p>
-            <div class="absolute bg-white p-3 rounded-full w-14 z-10"
-                style="top: 220px;z-index: 100 !important;border: 1px solid rgba(117, 101, 244, 1)">
-                <img src="assets/creativity.png" class="w-14" alt="">
-            </div>
-            <div class="absolute bg-white p-3 rounded-full w-14 z-10"
-                style="top:  440px;left:260px;z-index: 100 !important;border: 1px solid rgba(117, 101, 244, 1)">
-                <img src="assets/book.png" class="w-14" alt="">
-            </div>
-            <div class="absolute bg-white p-3 rounded-full w-14 z-10"
-                style="top:  440px;left:550px;z-index: 100 !important;border: 1px solid rgba(117, 101, 244, 1)">
-                <img src="assets/headphone.svg" class="w-14" alt="">
-            </div>
-            <div class="flex flex-wrap items-center justify-center mt-4">
-                <div class="w-64 h-60 flex items-center text-center justify-center py-3 mx-16 px-3 flex-col"
-                    style=" clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);background-color: rgba(245, 247, 255, 1);margin-bottom: -50px;">
 
+
+
+            <div class="flex flex-wrap max-[640px]:flex-col items-center justify-center mt-4" style="width: 640px;">
+                <div class="h-60 m-4 flex items-center text-center justify-center relative py-3 px-12 flex-col"
+                    style=" clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); width: 300px;background-color: rgba(245, 247, 255, 1);">
+                    <div class="absolute bg-white p-3 rounded-full w-14 z-10"
+                        style="top: -30px;z-index: 100 !important;border: 1px solid rgba(117, 101, 244, 1)">
+                        <img src="assets/creativity.png" class="w-14" alt="">
+                    </div>
                     <h1 class="text-2xl font-medium">Creativity!</h1>
                     <p class="font-light text-sm leading-6 mt-2">I use my creative streak to create beautiful websites
                         that improve
                         user experience and make your
                         business stand out from the competition.</p>
                 </div>
-                <div class="w-64 h-60 flex items-center text-center justify-center py-3 px-3 m-6 flex-col text-white"
+                <div class="h-60 flex items-center text-center justify-center py-3 m-2 px-12 relative  flex-col text-white"
                     style="background: linear-gradient(90deg, #2272FF 0%, #7661FC 100%);
-                   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);">
-
+                   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); width: 300px;">
+                    <div class="absolute bg-white p-3 rounded-full w-14 z-10"
+                        style="top:  -30px;z-index: 100 !important;border: 1px solid rgba(117, 101, 244, 1)">
+                        <img src="assets/book.png" class="w-14" alt="">
+                    </div>
                     <h1 class="text-2xl font-medium">Know-how!</h1>
                     <p class="font-light text-sm leading-5 mt-2">With extensive knowledge of programming languages,
                         databases and web
                         technologies, I develop tailor-made IT solutions for complex problems.</p>
                 </div>
-                <div class="w-64 h-60 flex items-center text-center justify-center py-3 px-3 m-2 flex-col"
-                    style="clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);background-color: rgba(245, 247, 255, 1); ">
+                <div class="h-60 flex m-2 items-center text-center justify-center relative py-3 px-12  flex-col"
+                    style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); width: 300px; background-color: rgba(245, 247, 255, 1); ">
+                    <div class="absolute bg-white p-3 rounded-full w-14 z-10"
+                        style="top:  -30px;z-index: 100 !important;border: 1px solid rgba(117, 101, 244, 1)">
+                        <img src="assets/headphone.svg" class="w-14" alt="">
+                    </div>
                     <h1 class="text-2xl font-medium">Customer focus!</h1>
                     <p class="font-light text-sm  leading-6 mt-2">I work closely with clients, listening and
                         communicating transparently
@@ -97,54 +99,57 @@
                 </div>
             </div>
         </div>
-        <div class="rounded-l-full overflow-hidden" style="transform: rotate(-60deg) translateX(178px);background: linear-gradient(90deg, #1FC6FF 0%, #7661FC 100%);
-        width: 700px;height: 390px;">
+        <div class="sm:hidden max-[640px]:hidden lg:flex rounded-l-full overflow-hidden" style="transform: rotate(-60deg) translateX(215px);background: linear-gradient(90deg, #1FC6FF 0%, #7661FC 100%);
+        width:700px;height: 390px;">
             <img src="assets/person.png" style="z-index: 100; transform: rotate(60deg); width: 350px;" alt="">
         </div>
     </section>
     <section class="bg-white w-full h-full">
         <section class="text-gray-600 body-font relative">
             <div class="container px-50 py-24 mx-auto">
-                <img src="assets/curly.png" style="top:20;left:0;" class="absolute w-60" alt="">
-                <img src="assets/curly-2.png" style="bottom: 100px;right:0;" class="absolute w-48" alt="">
+                <img src="assets/curly.png" style="top:20;left:0;" class="absolute w-60 sm:hidden max-[640px]:hidden"
+                    alt="">
+                <img src="assets/curly-2.png" style="bottom: 100px;right:0;"
+                    class="absolute w-48 sm:hidden max-[640px]:hidden" alt="">
                 <div class="flex flex-col text-center w-full mb-12">
                     <h1 class="sm:text-3xl text-2xl font-black title-font mb-4 text-gray-900 uppercase">projects</h1>
                     <p class="lg:w-1/2 mx-auto leading-relaxed text-base">Here you will find an overview of my created
                         projects. From web design to application development - I have implemented a variety of exciting
                         projects. Dive in and be inspired by my work.</p>
                 </div>
-                <div class="flex flex-col px-32">
-                    <div class="relative 100 py-18 flex items-center justify-center text-white mb-20" style="border-top-left-radius: 80px;border-bottom-left-radius: 80px; background: linear-gradient(90deg, #2272FF 0%, #7661FC 100%);
+                <div class="flex flex-col lg:px-32 sm:px-14 max-[640px]:px-6">
+                    <div class="relative  h-auto 100 py-18 items-center justify-center text-white mb-20 lg:flex " style="border-top-left-radius: 80px;border-bottom-left-radius: 80px; background: linear-gradient(90deg, #2272FF 0%, #7661FC 100%);
                         ">
                         <div>
                             <img style="bottom: 10px; left:10px; position: relative;" src="assets/4cloutKLG.png" alt="">
                         </div>
                         <div class="mx-20 w-100">
                             <h1 class="font-bold sm:text-2xl text-2xl">4clout KLG</h1>
-                            <p style="width:500px;" class="leading-8 mt-2 mb-4 font-light">4clout offers a full service
+                            <p style="width:100%;" class="leading-8 mt-2 mb-4 font-light">4clout offers a full service
                                 for social media management with
                                 concept, content
                                 production, platform management and freelancer support</p>
                             <button style="background: linear-gradient(360deg, #2372FE -25%, #1FC6FF 84.17%);"
-                                class="inline-flex items-center border-0 py-2 px-6 focus:outline-none rounded-3xl text-white text-full mt-10 md:mt-3">See
+                                class="inline-flex items-center border-0 py-2 px-6 focus:outline-none rounded-3xl text-white text-full max-[640px]:mt-2 max-[640px]:mb-4 sm:mt-2 sm:mb-2 mt-10 md:mt-3">See
                                 Site</button>
                         </div>
                         <img src="assets/dotted.png" style="width:100px; top:0; right:0;" class="absolute" alt="">
                     </div>
-                    <div class="relative 100 py-18 flex items-center justify-center text-white mb-10" style="border-top-right-radius: 80px;border-bottom-right-radius: 80px; background: linear-gradient(90deg, #2272FF 0%, #7661FC 100%);
+                    <div class="relative 100 py-18 items-center justify-center text-white mb-10 lg:flex" style="border-top-right-radius: 80px;border-bottom-right-radius: 80px; background: linear-gradient(90deg, #2272FF 0%, #7661FC 100%);
                         ">
 
-                        <div class="mx-20 w-100">
+                        <div class="mx-20 w-100 py-4 pb-4">
                             <h1 class="font-bold sm:text-2xl text-2xl">Nail Work</h1>
-                            <p style="width:500px;" class="leading-8 mt-2 mb-4 font-light">Welcome to our nail studio
+                            <p style="width:100%;" class="leading-8 mt-2 mb-4 font-light">Welcome to our nail studio
                                 Nail Works! We are experts in manicures and pedicures and we attach great importance to
                                 relaxation and luxury for our customers</p>
                             <button style="background: linear-gradient(360deg, #2372FE -25%, #1FC6FF 84.17%);"
-                                class="inline-flex items-center border-0 py-2 px-6 focus:outline-none rounded-3xl text-white text-full mt-10 md:mt-3">See
+                                class="inline-flex sm:mb-2 items-center border-0 py-2 px-6 focus:outline-none rounded-3xl text-white text-full sm:mt-2 mt-10 md:mt-3 max-[640px]:mt-0 max-[640px]:mb-4">See
                                 Site</button>
                         </div>
                         <div>
-                            <img style="bottom: 15px; right:15px; position: relative;" src="assets/nailwork.png" alt="">
+                            <img style="bottom: 15px; right:15px; position: relative; width: 600px;" class="sm:mt-3"
+                                src="assets/nailwork.png" alt="">
                         </div>
                         <img src="assets/dotted.png" style="width:100px; top:0; left:0;" class="absolute" alt="">
                     </div>
@@ -161,7 +166,7 @@
                         experts in manicures and pedicures and we attach great
                         importance to relaxation and luxury for our customers</p>
                 </div>
-                <div class="lg:w-1/2 rounded md:w-2 mx-auto bg-white">
+                <div class="lg:w-1/2 rounded mx-auto  bg-white">
                     <div class="w-full bg-red-50 p-4 text-center">
                         <p>Always we did love to here from you</p>
                     </div>
@@ -207,9 +212,9 @@
     </section>
     <footer style="background: rgba(44, 44, 44, 1);
     "
-        class="w-full h-24 border-b border-solid border-white px-40 py-2 bg-gray-900 flex items-center justify-between text-center">
-        <img src="assets/logo.png" alt="" class="w-30 h-14">
-        <nav style="font-family: 'BR Omega';">
+        class="w-full h-24 border-b border-solid border-white px-40 py-2 bg-gray-900 flex items-center justify-between sm:flex-wrap sm:h-auto max-[640px]:flex-wrap max-[640px]:h-auto text-center">
+        <img src="assets/logo.png" alt="" class="w-30 max-[640px]:w-64 h-14">
+        <nav style="font-family: 'BR Omega';" class="sm:py-3 max-[640px]:py-3">
             <a class="mr-5 cursor-pointer text-white">About me</a>
             <a class="mr-5 cursor-pointer text-white">projects</a>
             <a class="mr-5 cursor-pointer text-white">Contact</a>
