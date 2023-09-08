@@ -13,7 +13,7 @@
 }
 
 
-body{
+body {
     background: linear-gradient(90deg, #2272FF 0%, #7661FC 100%);
 }
 
@@ -26,4 +26,72 @@ input {
 
 section {
     font-family: "Poppins";
+}
+
+.hexa {
+    width: 240px;
+    height: 140px;
+    background-color: rgba(245, 247, 255, 1);
+    border-left: 1px solid #7565f4;
+    border-right: 1px solid #7565f4;    
+}
+
+.hexa::before {
+    content: "";
+    width: inherit;
+    border-left: 1px solid #7565f4;
+    border-right: 1px solid #7565f4;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(245, 247, 255, 1);
+    transform: rotate(60deg);
+}
+
+.hexa::after {
+    content: "";
+    width: inherit;
+    border-left: 1px solid #7565f4;
+    border-right: 1px solid #7565f4;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(245, 247, 255, 1);
+    transform: rotate(-60deg);
+}
+
+.hexa-blue {
+    width: 240px;
+    height: 140px;
+    background-color: #7565f4;
+    border-left: 1px solid #7565f4;
+    border-right: 1px solid #7565f4;    
+}
+
+.hexa-blue::before {
+    content: "";
+    width: inherit;
+    border-left: 1px solid #7565f4;
+    border-right: 1px solid #7565f4;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #7565f4;
+    transform: rotate(60deg);
+}
+
+.hexa-blue::after {
+    content: "";
+    width: inherit;
+    border-left: 1px solid #7565f4;
+    border-right: 1px solid #7565f4;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #7565f4;
+    transform: rotate(-60deg);
 }
